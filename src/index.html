@@ -8,20 +8,39 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <title>Webpack Starter Kit</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <title>goit-js-hw-13-image-finder</title>
   </head>
 
   <body>
     <form class="search-form" id="search-form">
       <input
+        class="input"
         type="text"
         name="query"
         autocomplete="off"
         placeholder="Search images..."
       />
     </form>
+
     <ul class="gallery">
       <!-- Список <li> с карточками изображений -->
     </ul>
-  </body>
+    <button class="is-hidden" type="button" data-action="load-more">
+      Load more
+    </button>
+    <div class="lds-roller is-hidden">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 </html>
